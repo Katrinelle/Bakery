@@ -1,0 +1,88 @@
+.footer {
+  padding: 32px 0;
+  position: relative;
+  background-image: url('../Images/foter-background\ PNG.png');
+  background-color: var(--color-primary-dark);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer::before,
+.footer::after {
+  position: absolute;
+  bottom: 0;
+  background-repeat: no-repeat;
+  content: '';
+}
+
+.footer::before {
+  width: 180px;
+  height: 120px;
+  left: 0;
+  background-image: url('../Images/Decor-bred-small.png');
+}
+.footer::after {
+  width: 380px;
+  height: 190px;
+  right: 0;
+  background-image: url('../Images/Decor-bred-large.png');
+}
+
+.footer-container {
+  display: flex;
+  gap: 20px;
+}
+.footer-nav,
+.footer-address {
+  flex-basis: 50%;
+  display: flex;
+  gap: 20px;
+}
+.footer-logo,
+.footer-menu {
+  flex-basis: 50%;
+}
+
+.footer-link,
+.footer-logo {
+  margin-top: 16px;
+}
+
+.address-list,
+.address-info {
+  flex-basis: 50%;
+}
+
+.address-link {
+  color: var(--color-ptimary-light);
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: none;
+  margin-top: 16px;
+}
+
+.address-link:hover {
+  color: var(--color-brand-normal);
+}
+.adress-icon {
+  fill: var(--color-ptimary-light);
+  margin-right: 22px;
+}
+.address-icon:hover {
+  fill: var(--color-brand-normal);
+}
+
+.address-copyright {
+  color: var(--color-secondary-dark);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.address-list {
+  display: block;
+}
+
+.footer-icons {
+  display: flex;
+}

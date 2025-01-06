@@ -7,7 +7,7 @@
     <title>Сучасна пекарня</title>
     <style></style>
 
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
@@ -84,6 +84,7 @@
             </div>
 
             <img
+              class="tradidions-photo"
               src="./Images/baker-men.jpg"
               alt="Чоловік пекар дивиться на батони з посмишкою"
             />
@@ -144,9 +145,9 @@
           </ul>
         </div>
       </section>
-      <section class="section" id="format-section">
+      <section class="section format-section" id="format-section">
         <div class="container">
-          <h2 class="format-section section-title centered">Формати</h2>
+          <h2 class="section-title centered">Формати</h2>
           <div class="formats-container">
             <button class="carousel-button" type="button">
               <svg width="16" height="16">
@@ -156,39 +157,58 @@
             <ul class="formats-list">
               <li class="formats-item">
                 <article class="format-card">
+                  <img
+                    class="format-image"
+                    src="./Images/Format-Warlus.jpg"
+                    alt="Walrus format"
+                  />
                   <h3 class="format-title" lang="en">Walrus</h3>
                   <div class="format-text">
-                    <p>Площа: до 120 м2</p>
-                    <p>Меню: розширене меню</p>
-                    <p>
+                    <p class="format-p">Площа: до 120 м2</p>
+                    <p class="format-p">Меню: розширене меню</p>
+                    <p class="format-p">
                       Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
                       офіціанти-різнороби
                     </p>
-                    <p>Посадкові місця: є</p>
+                    <p class="format-p">Посадкові місця: є</p>
                   </div>
                 </article>
               </li>
 
               <li class="formats-item">
                 <article class="format-card">
+                  <img
+                    class="format-image"
+                    src="./Images/Format-Horoshoe.jpg"
+                    alt="Horseshoe format"
+                  />
                   <h3 class="format-title" lang="en">Horseshoe</h3>
                   <div class="format-text">
-                    <p>Площа: до 25 м2</p>
-                    <p>Меню: найпопулярніші позиції меню</p>
-                    <p>Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря</p>
-                    <p>Посадкові місця: відсутні</p>
+                    <p class="format-p">Площа: до 25 м2</p>
+                    <p class="format-p">Меню: найпопулярніші позиції меню</p>
+                    <p class="format-p">
+                      Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря
+                    </p>
+                    <p class="format-p">Посадкові місця: відсутні</p>
                   </div>
                 </article>
               </li>
 
               <li class="formats-item">
                 <article class="format-card">
+                  <img
+                    class="format-image"
+                    src="./Images/Format-Handlebar.jpg"
+                    alt="Handlebar format"
+                  />
                   <h3 class="format-title" lang="en">Handlebar</h3>
                   <div class="format-text">
-                    <p>Площа: до 15 м2</p>
-                    <p>Меню: найпопулярніші позиції меню</p>
-                    <p>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</p>
-                    <p>Посадкові місця: відсутні</p>
+                    <p class="format-p">Площа: до 15 м2</p>
+                    <p class="format-p">Меню: найпопулярніші позиції меню</p>
+                    <p class="format-p">
+                      Штат: 1 продавець, 1 пекар, 1 помічник пекаря
+                    </p>
+                    <p class="format-p">Посадкові місця: відсутні</p>
                   </div>
                 </article>
               </li>
@@ -285,11 +305,11 @@
                 <img src="./Images/logo.svg" alt="Логотип сучасної пекарні" />
               </a>
             </div>
-            <ul footer-menu>
-              <li><a class="link" href="#">Наші традиції</a></li>
-              <li><a class="link" href="#">Шеф-кухарі</a></li>
-              <li><a class="link" href="#">Формати</a></li>
-              <li><a class="link" href="#">Контакти</a></li>
+            <ul class="footer-menu">
+              <li><a class="link footer-link" href="#">Наші традиції</a></li>
+              <li><a class="link footer-link" href="#">Шеф-кухарі</a></li>
+              <li><a class="link footer-link" href="#">Формати</a></li>
+              <li><a class="link footer-link" href="#">Контакти</a></li>
             </ul>
           </nav>
           <address class="footer-address">
@@ -312,20 +332,22 @@
                   >Україна, м. Київ, вул. Січових Стрільців 54
                 </a>
               </li>
-              <li>
-                <a class="address-link" href="#" target="_blank">
-                  <svg class="adress-icon" width="32" height="32">
-                    <use href="./Images/icons.svg#icon-facebook_black"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a class="address-link" href="#" target="_blank">
-                  <svg class="adress-icon" width="32" height="32">
-                    <use href="./Images/icons.svg#icon-instagram_black"></use>
-                  </svg>
-                </a>
-              </li>
+              <div class="footer-icons">
+                <li>
+                  <a class="address-link" href="#" target="_blank">
+                    <svg class="adress-icon" width="32" height="32">
+                      <use href="./Images/icons.svg#icon-facebook_black"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="address-link" href="#" target="_blank">
+                    <svg class="adress-icon" width="32" height="32">
+                      <use href="./Images/icons.svg#icon-instagram_black"></use>
+                    </svg>
+                  </a>
+                </li>
+              </div>
             </ul>
             <div class="address-info">
               <a class="address-link" href="#" target="_blank">

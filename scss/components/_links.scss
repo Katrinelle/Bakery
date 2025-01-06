@@ -1,0 +1,10 @@
+.link {
+  color: var(--color-ptimary-light);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: var(--color-brand-normal);
+  font-weight: 600;
+}
