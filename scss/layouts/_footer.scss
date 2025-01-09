@@ -1,0 +1,107 @@
+.footer {
+  padding: 32px 100px;
+  position: relative;
+  background-image: url('../Images/foter-background\ PNG.png');
+  background-color: var(--color-primary-dark);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 48px;
+
+  &::before,
+  &::after {
+    position: absolute;
+    bottom: 0;
+    background-repeat: no-repeat;
+    content: '';
+  }
+
+  &::before {
+    width: 180px;
+    height: 120px;
+    left: 0;
+    background-image: url('../Images/Decor-bred-small.png');
+  }
+  &::after {
+    width: 380px;
+    height: 190px;
+    right: 0;
+    background-image: url('../Images/Decor-bred-large.png');
+  }
+
+  &__container {
+    display: flex;
+    margin: 0;
+    gap: 20px;
+  }
+
+  &__nav,
+  &__address {
+    flex-basis: 50%;
+    display: flex;
+    gap: 20px;
+  }
+
+  &__nav {
+    &__logo {
+      flex-grow: 1;
+    }
+
+    &__logo,
+    &__menu {
+      flex-basis: 50%;
+    }
+    &__menu {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      gap: 16px;
+    }
+  }
+
+  &__address {
+    &__list,
+    &__info {
+      flex-basis: 50%;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      gap: 16px;
+    }
+    &__link {
+      color: var(--color-ptimary-light);
+      font-size: 16px;
+      font-weight: 300;
+      text-decoration: none;
+      &:hover {
+        color: var(--color-brand-normal);
+      }
+    }
+
+    &__icon {
+      fill: var(--color-ptimary-light);
+      margin-right: 22px;
+
+      &:hover {
+        fill: var(--color-brand-normal);
+      }
+    }
+
+    &__copyright {
+      color: var(--color-secondary-dark);
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      gap: 16px;
+    }
+
+    &__icons {
+      display: flex;
+    }
+  }
+}
