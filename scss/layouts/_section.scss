@@ -1,10 +1,19 @@
 .section {
-  padding: 48px 0;
+  padding: 20px 0;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 48px 0;
+  }
 
   &__title {
-    font-size: 64px;
+    font-size: 32px;
     font-weight: 900;
-    line-height: 1.3125;
+    line-height: 1.5;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 64px;
+      line-height: 1.3125;
+    }
 
     &--centered {
       text-align: center;

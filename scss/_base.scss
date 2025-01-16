@@ -8,10 +8,15 @@ body {
   color: var(--color-primary-dark);
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 300;
   margin: 0;
   background-color: var(--color-ptimary-light);
+
+  @media screen and (min-width: $bp-tablet) {
+    font-size: 18px;
+    font-weight: 400;
+  }
 }
 
 h1,
