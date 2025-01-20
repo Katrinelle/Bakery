@@ -15,6 +15,16 @@
     gap: 40px;
   }
 
+  &__logo {
+    width: 72px;
+    height: 38px;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 108px;
+      height: 57px;
+    }
+  }
+
   &__nav {
     display: flex;
     align-items: center;

@@ -12,12 +12,12 @@
     rgba(49, 38, 26, 0.71) 72.92%,
     var(--color-primary-dark) 100%
   );
-  transition: transform 0.3s;
+  // transition: transform 0.3s;
   overflow: hidden;
 
-  &:hover {
-    transform: scale(1.05);
-  }
+  // &:hover {
+  //   transform: scale(1.05);
+  // }
 
   &__image {
     position: absolute;
@@ -39,5 +39,6 @@
     font-size: 14px;
     font-weight: 300;
     color: var(--color-ptimary-light);
+    margin-bottom: 0;
   }
 }
